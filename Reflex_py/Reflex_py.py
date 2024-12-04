@@ -6,7 +6,7 @@ from Reflex_py.views.botones.botones import *
 
 class State(rx.State):
     valor = [""]
-    union_str = ""
+    union_str: str
     i = 0
     
     #NUMEROS [0,1,2,3,4,5,6,7,8,9]
@@ -44,10 +44,12 @@ class State(rx.State):
         self.union_str = ""
         
         for self.i in self.valor:
-            self.union_str += str(self.i)
+            if self.i != "=":
+                self.union_str += str(self.i)
 
-        self.valor = str(f"= {eval(self.union_str)}")
-           
+        self.valor = f"{eval(self.union_str)}"
+        self.valor = ["=", self.valor] 
+                   
     #LOGICA DEL BORRAR EN TOTAL
     def clear(self):
         self.valor = [""]
