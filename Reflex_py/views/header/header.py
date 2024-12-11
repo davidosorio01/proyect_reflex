@@ -1,12 +1,12 @@
 import reflex as rx
 from Reflex_py.components.link_button import link_personal
 
-def header() -> rx.Component:
+def header():
     return rx.vstack(
         rx.hstack(
             rx.avatar(
                 src="/favicon.ico",
-                size="xl",
+                size="4",
             ),
             rx.text(
                 "@dosorio_01",

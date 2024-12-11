@@ -5,7 +5,7 @@ def links() -> rx.Component:
     return rx.vstack(
         rx.heading(
             "Diferentes aplicaciones:",
-            size="lg",
+            size="4",
         ),
         link_button(
             text="CALCULADORA",
@@ -19,7 +19,7 @@ def links() -> rx.Component:
         ),
         link_button(
             text="DATA SCIENCE",
-            url="/",
+            url="/datascience",
             icon_text="database",
         ),
         link_button(

@@ -1,6 +1,6 @@
 import reflex as rx
 
-def botones_principales(number, on_click):
+def botones_principales(number, on_click) -> rx.Component:
     return rx.hstack(
         rx.button(
             number,
@@ -11,7 +11,7 @@ def botones_principales(number, on_click):
         ),
     )
     
-def botones_secundarios(number, on_click):
+def botones_secundarios(number, on_click) -> rx.Component:
     return rx.hstack(
         rx.button(
             number,
@@ -22,7 +22,7 @@ def botones_secundarios(number, on_click):
         ),
     )
 
-def botones_inferiores(number, on_click):
+def botones_inferiores(number, on_click) -> rx.Component:
     return rx.hstack(
         rx.button(
             number,
@@ -33,7 +33,7 @@ def botones_inferiores(number, on_click):
         ),
     )
     
-def botones_icon(number, on_click):
+def botones_icon(number, on_click) -> rx.Component:
     return rx.hstack(
         rx.button(
             rx.icon(

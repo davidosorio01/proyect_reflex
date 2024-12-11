@@ -5,7 +5,7 @@ fecha_actual = datetime.datetime.now()
 # Extraer el año  
 ano_actual = fecha_actual.year
 
-def footer():
+def footer() -> rx.Component:
     return rx.hstack(
         rx.icon(
             "copyright"
